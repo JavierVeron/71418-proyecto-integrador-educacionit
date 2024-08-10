@@ -13,7 +13,7 @@ const Navbar = () => {
                 <div className="col">
                     <ul className="nav justify-content-center">
                         <li className="nav-item">
-                            <Link to={"/category/calzado"} className="nav-link active text-black fw-bold">Calzado</Link>
+                            <Link to={"/"} className="nav-link active text-black fw-bold">Calzado</Link>
                         </li>
                         <li className="nav-item">
                             <Link to={"/category/mujer"} className="nav-link text-black fw-bold">Mujer</Link>
@@ -22,7 +22,7 @@ const Navbar = () => {
                             <Link to={"/category/hombre"} className="nav-link text-black fw-bold">Hombre</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={"/category/ninos"} className="nav-link text-black fw-bold" href="#">Niños</Link>
+                            <Link to={"/category/ninos"} className="nav-link text-black fw-bold">Niños</Link>
                         </li>
                     </ul>
                 </div>
@@ -31,8 +31,8 @@ const Navbar = () => {
                         <div className="col-md-6 offset-md-5">
                             <SearchBox />
                         </div>
-                        <div className="col-md-1 align-self-start">
-                            <Link to={"/cart"}>
+                        <div className="col-md-1">
+                            <Link to={"/cart"} className="btn btn-light">
                                 <i className="bi bi-bag"></i>
                             </Link>
                         </div>
